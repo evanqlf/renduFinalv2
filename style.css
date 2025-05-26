@@ -1,21 +1,25 @@
-#sect0{
+body{
+  background-color:rgb(199, 199, 199);
+}
+
+header{
     text-align: center;
+    margin: auto;
 }
 
 #product-container {
-    
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   .carte {
-    background-color: blue;
+    background-color: rgb(238, 238, 238);
     padding: 25px;
     margin: 50px auto;
     border-radius: 10px;
     text-align: center;
-    width: 70%;
-    display: flex;
-    flex-wrap: nowrap;
-    align-items: center;
+    width: 40%;
 
   }
 
@@ -23,11 +27,31 @@
     background-color: gold;
 }
 
-.principal{
-    text-align: center;
-}
-
 img{
     width: 20%;
     height: auto;
+}
+
+#sectTemoignages{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  
+  div{
+    background-color: rgb(124, 124, 201);
+    text-align: center;
+    width: 400px;
+    margin: 0px auto;
+    border-radius: 10px;
+  h2{
+    text-align: center;
+    display: grid;
+  }
+
+  p{
+    margin: 15px;
+  }
+  } 
+
+
 }

@@ -71,14 +71,13 @@ function fetchsneaks(lien) {
     .then((data) => {
       console.log(data);
       let contenair = document.getElementById("product-container");
-      let principal = document.createElement("div");
-      principal.className = "principal";
-      principal.innerHTML = `
-                <h2>${data.nomCommercial}</h2>
-          <p>${data.phraseAccroche}</p>
-          <button>${data.texteAppelAction}</button>
-              `;
-      contenair.appendChild(principal);
+      let nav = document.getElementById("nav");
+nav.innerHTML = `
+<h2>${data.nomCommercial}</h2>
+<p>${data.phraseAccroche}</p>
+<button>${data.texteAppelAction}</button>
+`
+      contenair.appendChild(nav);
       data.produits.forEach((activiter) => {
 
         let card = document.createElement("div");
@@ -99,21 +98,41 @@ function fetchsneaks(lien) {
         contenair.appendChild(card);
 
 
-        // // contenair.appendChild(temoignages);
-        // // data.temoignages.forEach((temoins)=>{
+      
 
-        // //   let name = document.createElement("h2");
-        // //   name.textContent = temoins.prenom;
 
-        // //   let exp = document.createElement("h3");
-        // //   exp.textContent = temoins.typeExperience;
 
-        // //   let commentaires = document.createElement("p");
-        // //   commentaires.textContent = temoins.commentaire;
-        // })
+        let divCommentaire = document.getElementById("sectTemoignages");
+        data.temoignages.forEach(element => {
+
+          sectTemoignages.innerHTML += `
+         <div>
+           <h2>${element.prenom}</h2>
+          <h3>${element.typeExperience}</h3>
+          <p>${element.commentaire}</p>
+          <h3>${element.note}</h3>
+          </div>`;
+        });
+      
+
       });
     });
 }
 fetchsneaks(
   "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/json/sneakers.json"
 );
+
+
+
+//  contenair.appendChild(temoignages);
+//  data.temoignages.forEach((temoins)=>{
+
+//   let name = document.createElement("h2");
+//   name.textContent = temoins.prenom;
+
+//   let exp = document.createElement("h3");
+//   exp.textContent = temoins.typeExperience;
+
+//   let commentaires = document.createElement("p");
+//   commentaires.textContent = temoins.commentaire;
+// })
