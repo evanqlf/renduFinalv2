@@ -1,0 +1,29 @@
+#sect0{
+    text-align: center;
+}
+
+#product-container {
+    
+  }
+
+  .carte {
+    background-color: blue;
+    padding: 25px;
+    margin: 50px auto;
+    border-radius: 10px;
+    text-align: center;
+
+  }
+
+.carte a :hover{
+    background-color: gold;
+}
+
+.principal{
+    text-align: center;
+}
+
+img{
+    width: 20%;
+    height: auto;
+}
