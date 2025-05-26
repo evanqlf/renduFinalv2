@@ -12,6 +12,10 @@
     margin: 50px auto;
     border-radius: 10px;
     text-align: center;
+    width: 70%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
 
   }
 
