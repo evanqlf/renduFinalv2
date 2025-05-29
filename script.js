@@ -36,6 +36,8 @@ nav.innerHTML = `
 
 
         let divCommentaire = document.getElementById("sectTemoignages");
+        console.log(data.temoignages);
+        
         data.temoignages.forEach(element => {
 
           sectTemoignages.innerHTML += `
