@@ -54,18 +54,3 @@ nav.innerHTML = `
 fetchsneaks(
   "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/json/sneakers.json"
 );
-
-
-
-//  contenair.appendChild(temoignages);
-//  data.temoignages.forEach((temoins)=>{
-
-//   let name = document.createElement("h2");
-//   name.textContent = temoins.prenom;
-
-//   let exp = document.createElement("h3");
-//   exp.textContent = temoins.typeExperience;
-
-//   let commentaires = document.createElement("p");
-//   commentaires.textContent = temoins.commentaire;
-// })
